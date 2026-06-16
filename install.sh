@@ -67,5 +67,5 @@ echo
 bold "Done."
 echo "Next steps:"
 echo "  1. Start tmux:       tmux"
-echo "  2. Install plugins:  press  Ctrl+Space  then  Shift+I  (capital I)"
-echo "  3. Reload anytime:   Ctrl+Space  then  r"
+echo "  2. Install plugins:  press  Ctrl+a  then  Shift+I  (capital I)"
+echo "  3. Reload anytime:   Ctrl+a  then  r"

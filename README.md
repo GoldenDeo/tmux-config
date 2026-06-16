@@ -1,6 +1,6 @@
 # tmux-config
 
-Власний `.tmux.conf` із Lake-палітрою (matches Story Tail design tokens), TPM-плагінами і sensible defaults. Префікс — `Ctrl+Space`.
+Власний `.tmux.conf` із Lake-палітрою (matches Story Tail design tokens), TPM-плагінами і sensible defaults. Префікс — `Ctrl+a` (як у screen; не конфліктує з macOS Ctrl+Space).
 
 ## Встановлення
 
@@ -15,7 +15,7 @@ cd ~/PhpstormProjects/tmux-config
 2. Клонує TPM у `~/.tmux/plugins/tpm`.
 3. Релоудить запущений tmux-сервер (якщо є).
 
-Запусти `tmux`, далі **`Ctrl+Space`** потім **`Shift+I`** (велика I) — TPM скачає плагіни.
+Запусти `tmux`, далі **`Ctrl+a`** потім **`Shift+I`** (велика I) — TPM скачає плагіни.
 
 ## Видалення
 
@@ -40,13 +40,13 @@ cd ~/PhpstormProjects/tmux-config
 
 | Hotkey | Дія |
 |---|---|
-| `Ctrl+Space \|` | split вертикально |
-| `Ctrl+Space -` | split горизонтально |
-| `Ctrl+Space h/j/k/l` | навігація між pane (vim) |
-| `Ctrl+Space H/J/K/L` | resize pane |
-| `Ctrl+Space r` | reload конфіга |
-| `Ctrl+Space d` | detach (сесія живе) |
-| `Ctrl+Space Ctrl+s` | manual save (resurrect) |
-| `Ctrl+Space Ctrl+r` | manual restore (resurrect) |
+| `Ctrl+a \|` | split вертикально |
+| `Ctrl+a -` | split горизонтально |
+| `Ctrl+a h/j/k/l` | навігація між pane (vim) |
+| `Ctrl+a H/J/K/L` | resize pane |
+| `Ctrl+a r` | reload конфіга |
+| `Ctrl+a d` | detach (сесія живе) |
+| `Ctrl+a Ctrl+s` | manual save (resurrect) |
+| `Ctrl+a Ctrl+r` | manual restore (resurrect) |
 
 Повний список — у [GUIDE.md](GUIDE.md).
