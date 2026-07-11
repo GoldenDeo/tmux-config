@@ -55,7 +55,13 @@ else
     ok "TPM installed"
 fi
 
-# 3) Reload running tmux if any
+# 3) CLI deps + shell integration (fzf, zoxide, sessionizer)
+if [[ -x "$REPO_DIR/scripts/install-deps.sh" ]]; then
+    info "Setting up CLI deps (fzf, zoxide) + shell integration"
+    "$REPO_DIR/scripts/install-deps.sh" || warn "Dependency setup had issues — see output above"
+fi
+
+# 4) Reload running tmux if any
 if tmux info >/dev/null 2>&1; then
     tmux source-file "$TARGET"
     ok "Reloaded running tmux server"
